@@ -1,4 +1,10 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {};
-
-export default nextConfig;
+const pathMap = {
+    '/': { page: '/AllQuizzesPage' },
+  };
+  
+  export default {
+    async pathMap() {
+      return pathMap;
+    },
+  };
+  
